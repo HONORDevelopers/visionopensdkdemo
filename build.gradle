@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url 'http://cmc.cloudartifact.dragon.tools.hihonor.com/artifactory/maven-public/'
+        }
+        maven { url 'https://cloudartifact.ipd.hihonor.com/artifactory/maven-public2/' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://cloudartifact.ipd.hihonor.com/artifactory/Product-ApkBinary-release/'
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.2.1"
+        classpath "com.honor.cloudbuild.apk.sign:apksigner-v2:1.0.5"
+        classpath "com.honor.ets:hmts-plugin:1.0.1"
+        classpath "com.honor.tool.envplugin:envplugin:latest.release"
+    }
+}
+
+apply plugin: "com.honor.tool.envplugin"
+
+honorDependencyManager {
+    mospApiLevel = "40"
+    androidSdkVersion = "34"
+    androidToolVersion = "30.0.2"
+    androidNdkVersion = "21.4.7075529"
+}
+
+allprojects {
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url 'http://cmc.cloudartifact.dragon.tools.hihonor.com/artifactory/maven-public/'
+        }
+        maven { url 'https://cloudartifact.ipd.hihonor.com/artifactory/maven-public2/' }
+        maven {
+            allowInsecureProtocol = true
+            url "http://cloudartifact.ipd.hihonor.com/artifactory/Product-binaryuikithihonor-release/"
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://cloudartifact.ipd.hihonor.com/artifactory/Product-ApkBinary-release/'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

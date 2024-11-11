@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">vision-plugin</string>
+
+    <string name="txt_select_photo" translatable="false">请选择一张图片:</string>
+    <string name="txt_btn_select_photo" translatable="false">选择图片</string>
+    <string name="txt_input_text" translatable="false">请输入文本：</string>
+    <string name="txt_image_feature_update" translatable="false">更新图片向量beta系数</string>
+    <string name="txt_image_text_match" translatable="false">智能配文</string>
+    <string name="txt_plugin_feature_ability" translatable="false">查询插件能力状态</string>
+    <string name="txt_sensitive_detect" translatable="false">敏感信息检测</string>
+    <string name="txt_sensitive_edit_tip" translatable="false">请填写需要进行检测的信息</string>
+    <string name="txt_layout_enhance_load" translatable="false">加载OCR版面分析图片资源</string>
+    <string name="txt_layout_enhance_detect" translatable="false">OCR版面分析增强检测</string>
+
+    <string name="txt_select_doc_photo_detect" translatable="false">选择文档照片</string>
+    <string name="txt_start_doc_scan" translatable="false">文档扫描</string>
+    <string name="txt_start_doc_warp" translatable="false">文档矫正</string>
+    <string name="txt_start_doc_filter" translatable="false">文档滤镜</string>
+    <string name="txt_select_filter_param_hint" translatable="false">filter参数 0~3</string>
+    <string name="txt_detect_doc_end" translatable="false">结束</string>
+
+    <string name="txt_pre_load_code_detect" translatable="false">预加载码解析</string>
+    <string name="txt_code_detect" translatable="false">码解析</string>
+    <string name="txt_code_recognize" translatable="false">码识别</string>
+    <string name="txt_code_router" translatable="false">码路由</string>
+    <string name="txt_code_recognize_and_router" translatable="false">码识别加路由</string>
+    <string name="txt_load_bitmap" translatable="false">加载图片相关资源</string>
+    <string name="txt_btn_pre_code_san_first" translatable="false">预览扫码1</string>
+    <string name="txt_btn_pre_code_san_second" translatable="false">预览扫码2</string>
+
+    <string name="test_conn_service" translatable="false">连接服务并加载插件</string>
+    <string name="test_query_model_version" translatable="false">查询模型版本号</string>
+    <string name="test_dis_conn_service" translatable="false">断开服务</string>
+
+
+
+</resources>
